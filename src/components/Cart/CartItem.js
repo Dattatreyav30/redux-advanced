@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { cartMethodActions } from "../../store/redux-store";
 
 const CartItem = (props) => {
-  const { title, total, price } = props.item;
+  const { total } = props.item;
   const quantity = useSelector((state) => state.cartMethod.quantity);
   const dispatch = useDispatch();
   const items = useSelector((state) => state.cartMethod.items);
